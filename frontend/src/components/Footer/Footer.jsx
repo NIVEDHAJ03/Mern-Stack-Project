@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
+            <img className='logo' src={assets.logo} alt="" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iusto excepturi totam, exercitationem delectus quas vitae quaerat doloremque error quis consequuntur voluptatem fugit nam ab deserunt aspernatur asperiores iure temporibus itaque .</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="footer-content-center">
-            <h2>TOMATO</h2>
+            <h2>Nivefoods</h2>
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2026 &copy; Tomato.com All right Reserved. </p>
+      <p className="footer-copyright">Copyright 2026 &copy; Nivefoods.com All right Reserved. </p>
     </div>
   )
 }

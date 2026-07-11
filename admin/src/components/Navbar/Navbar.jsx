@@ -5,7 +5,7 @@ import {assets} from '../../assets/assets'
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <img src={assets.logo} alt="" />
+<img className="logo" src={assets.logo} alt="Nivefoods Admin Panel" />
         <img className='Profile' src={assets.profile_image} alt="" />
       
     </div>

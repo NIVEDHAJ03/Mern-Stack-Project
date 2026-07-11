@@ -1,13 +1,22 @@
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding: 8px 4%;
-}
-.navbar .logo{
-    width: max(10%,80px);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    height: 80px;
 }
 
-.navbar .Profile{
-    width:40px;
+.navbar .logo {
+    width: 220px;
+    height: 75px;
+    object-fit: contain;
+    object-position: left center;
+    transform: scale(1.5);
+    transform-origin: left center;
+}
+
+.navbar .Profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
