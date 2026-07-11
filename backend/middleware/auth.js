@@ -6,19 +6,21 @@ const authMiddleware = async (req, res, next) => {
   if (!token) {
     return res.json({
       success: false,
-      message: "Not authorized, login again",
+      message: "Not Authorized Login Again",
     });
   }
 
   try {
     const token_decode = jwt.verify(token, process.env.JWT_SECRET);
-    req.userId = decode.id;
+
+    req.userId = token_decode.id;
+
     next();
   } catch (error) {
-    console.log(error);
+    console.log("JWT Verify Error:", error);
     res.json({
       success: false,
-      message: "Invalid Token",
+      message: error.message,
     });
   }
 };
